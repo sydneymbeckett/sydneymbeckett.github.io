@@ -13,6 +13,7 @@ website:
       - about.qmd
       - AboutMe.qmd
       - ProjectPage.qmd
+      - FreeForAll.qmd
 
 format:
   html:
