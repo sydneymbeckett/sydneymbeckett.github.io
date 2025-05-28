@@ -12,6 +12,7 @@ website:
         text: Home
       - about.qmd
       - AboutMe.qmd
+      - ProjectPage.qmd
 
 format:
   html:
