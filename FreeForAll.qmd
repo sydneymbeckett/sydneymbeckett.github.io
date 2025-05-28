@@ -1,5 +1,5 @@
 ---
-title: "FreeForAll"
+title: "Free For All"
 format: html
 ---
 
