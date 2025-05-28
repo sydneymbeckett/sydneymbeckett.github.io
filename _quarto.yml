@@ -5,7 +5,7 @@ project:
 # ~ additional metadata excluded for brevity ~
 
 website:
-  title: "sydneymbeckett.github.io"
+  title: "Sydney Beckett"
   navbar:
     left:
       - href: index.qmd
@@ -17,6 +17,7 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
+    page-layout: full
 
 editor: visual
 
