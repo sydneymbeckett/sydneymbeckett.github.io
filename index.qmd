@@ -1,5 +1,18 @@
 ---
 title: "Sydney Beckett"
+image: headshot.jpg
+toc: false
+about: 
+  template: solana
+  image-shape: round
+  image-width: 17em
+  links:
+    - text: LinkedIn
+      href: www.linkedin.com/in/sydney-beckett-42431b257
+    - text: GitHub
+      href: https://github.com/sydneymbeckett
+    - text: Email
+      href: mailto::sydneymbeckett@ucsb.edu
 ---
 
 Hey there, my name is Sydney! I am currently a 3rd year Environmental Studies student at University of California Santa Barbara. I am passionate about climate change and creating a sustainable future. Outside of school, I love to be outside, I am an avid surfer and I compete for my university.
