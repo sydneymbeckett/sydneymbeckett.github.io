@@ -10,11 +10,14 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
-      - AboutMe.qmd
-      - ProjectPage.qmd
-      - FreeForAll.qmd
-      - Resume.qmd
+      - href: about.qmd
+      - text: About Me
+      - href: ProjectPage.qmd
+      - text: Project Page
+      - href: FreeForAll.qmd
+      - text: Passions
+      - heref: Resume.qmd
+      - text: Resume
 
 format:
   html:
