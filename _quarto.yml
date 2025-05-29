@@ -1,24 +1,25 @@
 project:
   type: website
   output-dir: docs
-  
-# ~ additional metadata excluded for brevity ~
 
 website:
   title: "Sydney Beckett"
-navbar:
-  left:
-    - href: index.qmd
-      text: Home
-    - href: about.qmd
-      text: About Me
-    - href: ProjectPage.qmd
-      text: Project Page
-    - href: FreeForAll.qmd
-      text: Passions
-    - href: Resume.qmd
-      text: Resume
+  navbar:
+   left:
+     - href: index.qmd
+       text: Home
+     - href: ProjectPage.qmd
+       text: Project Page
+     - href: FreeForAll.qmd
+       text: Passions
+     - href: Resume.qmd
+       text: Resume
+     
 
+format:
+  html:
+    theme: cosmo
+    css: styles.css
 
 format:
   html:
