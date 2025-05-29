@@ -3,40 +3,40 @@ title: "About Me"
 format: html
 ---
 
-## 👋 Hi, I'm Sydney!
+## Hi, I'm Sydney!
 
 Welcome! I'm excited to share a little bit more about myself.
 
 ------------------------------------------------------------------------
 
-## 🌊 Where I'm From
+## Where I'm From
 
 I grew up in **Morro Bay**, where surfing, swimming, and spending time in the ocean shaped my deep connection to the natural world. That early love for the coast and marine life inspired my passion for sustainability.
 
+\![Me surfing in MB\] (surfing.jpg)
+
 ------------------------------------------------------------------------
 
-## 🎓 What I'm Studying
+## What I'm Studying
 
 I'm currently a **third-year Environmental Studies major at UC Santa Barbara**. My academic path reflects my deep interest in environmental protection, coastal ecosystems, and sustainable solutions for the future.
 
+\![UCSB Commitment\] (ucsb.jpeg)
+
 ------------------------------------------------------------------------
 
-## 🏄‍♀️ What I Love
+## What I Love
 
 At UCSB, I’m a proud member of the **surf team** and continue to compete. Surfing is one of my greatest sources of joy and inspiration—it keeps me grounded and connected to the ocean I care so deeply about. When I’m not in the water, you’ll find me outside hiking, doing yoga, or soaking up the sun.
 
+\![UCSB Surf Team\] (surfteam.jpeg)
+
 ------------------------------------------------------------------------
 
-## 🌱 What I Do
+## What I Do
 
 I work as a **lead coach for The Sea League (TSL)** in Santa Barbara. TSL is an after-school program serving low-income youth, helping them build a relationship with the ocean through hands-on education. We explore the intertidal zone, teach about marine ecology, and encourage environmental stewardship.
 
+! \[Sea League\] (sealeague.JPG)
+
 ------------------------------------------------------------------------
-
-Hi! Im Sydney and this is a little bit more about me.
-
-I grew up in Morro Bay, where surfing, swimming, and spending time in the ocean shaped my deep connection to the natural world. That connection inspired my passion for sustainability and led me to major in Environmental Studies at UC Santa Barbara.
-
-At UCSB, I’m a member of the surf team and continue to compete—surfing remains one of my greatest sources of joy and motivation. I love being outdoors, whether I’m in the water, hiking, or just enjoying the sun.
-
-I also work as a lead coach for The Sea League(TSL) in Santa Barbara. TSL is an after-school program for low-income children, helping them learn about, and develop a connection to, the ocean through hands-on educational activities about the intertidal ecosystem and environmental stewardship.
