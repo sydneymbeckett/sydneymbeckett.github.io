@@ -16,7 +16,7 @@ website:
       - text: Project Page
       - href: FreeForAll.qmd
       - text: Passions
-      - heref: Resume.qmd
+      - href: Resume.qmd
       - text: Resume
 
 format:
