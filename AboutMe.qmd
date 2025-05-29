@@ -2,3 +2,11 @@
 title: "About Me"
 format: html
 ---
+
+Hi! Im Sydney and this is a little bit more about me.
+
+I grew up in Morro Bay, where surfing, swimming, and spending time in the ocean shaped my deep connection to the natural world. That connection inspired my passion for sustainability and led me to major in Environmental Studies at UC Santa Barbara.
+
+At UCSB, I’m a member of the surf team and continue to compete—surfing remains one of my greatest sources of joy and motivation. I love being outdoors, whether I’m in the water, hiking, or just enjoying the sun.
+
+I also work as a lead coach for The Sea League(TSL) in Santa Barbara. TSL is an after-school program for low-income children, helping them learn about, and develop a connection to, the ocean through hands-on educational activities about the intertidal ecosystem and environmental stewardship.
