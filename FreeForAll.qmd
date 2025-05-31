@@ -9,4 +9,68 @@ Ever since I could stand my dad has been pushing me into waves.
 
 ## Traveling
 
-## 
+I’ve been fortunate to spend much of my childhood—and continue to do so—traveling with family and friends. I love traveling because it allows me to explore new places, experience different cultures, and see the world from fresh perspectives. On my most recent adventure, I studied abroad in Australia. After school, seven friends and I traveled down the East Coast of Australia in a motorhome, from Brisbane to Sydney. We then flew to New Zealand, where we explored the North Island in another motorhome, chasing waves and embracing the spirit of adventure.
+
+```{r}
+# install packages individually
+install.packages("here")
+install.packages("tidyverse")
+install.packages("DT")
+install.packages("plotly")
+install.packages("leaflet")
+install.packages("leaflet.extras")
+
+```
+
+```{r}
+## c. create a map!
+
+#| eval: true
+#| echo: true
+# initialize map ----
+site_map <- leaflet() %>% 
+  
+  # add base map tiles (use `addTiles()` for Google maps tiles, OR `addProviderTiles()` for 3rd party base maps: https://leaflet-extras.github.io/leaflet-providers/preview/) ----
+  addProviderTiles(providers$Esri.WorldImagery, group = "ESRI World Imagery") %>% 
+  addProviderTiles(providers$Esri.OceanBasemap, group = "ESRI Oceans") %>% 
+  
+  # add mini map ----
+  addMiniMap(toggleDisplay = TRUE, minimized = TRUE) %>% 
+  
+  # set view over Santa Barbara Channel ----
+  setView(lng =  -119.83, lat = 34.44, zoom = 9) %>% 
+  
+  # add MPA markers ----
+  addMarkers(data = mpa, group = "MPA Sites",
+             icon = lobster_icon,
+             lng = ~lon, lat = ~lat,
+             popup = paste("Site Name:", mpa$site, "<br>",
+                           "Coordinates (lat/long):", mpa$lat, ",", mpa$lon)) %>%
+  
+  # add non-MPA markers ----
+  addMarkers(data = non_mpa, group = "Non-MPA Sites",
+             icon = lobster_icon,
+             lng = ~lon, lat = ~lat,
+             popup = paste("Site Name:", non_mpa$site, "<br>",
+                           "Coorinates (lat/long):", non_mpa$lat, ",", non_mpa$lon)) %>%
+
+  # add layers control (toggle base map tiles & markers based on group IDs) ----
+  addLayersControl(
+    baseGroups = c("ESRI World Imagery", "ESRI Oceans"),
+    overlayGroups = c("MPA Sites", "Non-MPA Sites")) %>% 
+  
+  # add reset map button ----
+  leaflet.extras::addResetMapButton()
+
+# print map ----
+site_map
+
+```
+
+```{r}
+#| eval: false
+#| echo: true
+htmltools::save_html(lobs_interactive, here::here("outputs", "plotly.html"))
+htmltools::save_html(lobs_dt, here::here("outputs", "dt.html"))
+htmltools::save_html(site_map, here::here("outputs", "leaflet.html"))
+```
