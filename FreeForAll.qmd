@@ -20,44 +20,45 @@ install.packages("plotly")
 install.packages("leaflet")
 install.packages("leaflet.extras")
 
+
 ```
 
 ```{r}
 ## c. create a map!
-
+library(leaflet)
 #| eval: true
 #| echo: true
 # initialize map ----
-site_map <- leaflet() %>% 
+site_map <- leaflet() |> 
   
   # add base map tiles (use `addTiles()` for Google maps tiles, OR `addProviderTiles()` for 3rd party base maps: https://leaflet-extras.github.io/leaflet-providers/preview/) ----
-  addProviderTiles(providers$Esri.WorldImagery, group = "ESRI World Imagery") %>% 
-  addProviderTiles(providers$Esri.OceanBasemap, group = "ESRI Oceans") %>% 
+  addProviderTiles(providers$Esri.WorldImagery, group = "ESRI World Imagery") |>  
+  addProviderTiles(providers$Esri.OceanBasemap, group = "ESRI Oceans") |> 
   
   # add mini map ----
-  addMiniMap(toggleDisplay = TRUE, minimized = TRUE) %>% 
+  addMiniMap(toggleDisplay = TRUE, minimized = TRUE) |> 
   
   # set view over Santa Barbara Channel ----
-  setView(lng =  -119.83, lat = 34.44, zoom = 9) %>% 
+  setView(lng =  -119.83, lat = 34.44, zoom = 9) |> 
   
   # add MPA markers ----
   addMarkers(data = mpa, group = "MPA Sites",
-             icon = lobster_icon,
+             icon = stars(),
              lng = ~lon, lat = ~lat,
              popup = paste("Site Name:", mpa$site, "<br>",
-                           "Coordinates (lat/long):", mpa$lat, ",", mpa$lon)) %>%
+                           "Coordinates (lat/long):", mpa$lat, ",", mpa$lon))  |> 
   
   # add non-MPA markers ----
   addMarkers(data = non_mpa, group = "Non-MPA Sites",
-             icon = lobster_icon,
+             icon = stars,
              lng = ~lon, lat = ~lat,
              popup = paste("Site Name:", non_mpa$site, "<br>",
-                           "Coorinates (lat/long):", non_mpa$lat, ",", non_mpa$lon)) %>%
+                           "Coorinates (lat/long):", non_mpa$lat, ",", non_mpa$lon))  |> 
 
   # add layers control (toggle base map tiles & markers based on group IDs) ----
   addLayersControl(
     baseGroups = c("ESRI World Imagery", "ESRI Oceans"),
-    overlayGroups = c("MPA Sites", "Non-MPA Sites")) %>% 
+    overlayGroups = c("MPA Sites", "Non-MPA Sites")) |> 
   
   # add reset map button ----
   leaflet.extras::addResetMapButton()
@@ -73,4 +74,42 @@ site_map
 htmltools::save_html(lobs_interactive, here::here("outputs", "plotly.html"))
 htmltools::save_html(lobs_dt, here::here("outputs", "dt.html"))
 htmltools::save_html(site_map, here::here("outputs", "leaflet.html"))
+```
+
+```{r}
+travel_spots <- data.frame(
+  place = c("Brisbane", "Byron Bay", "Sydney", "Auckland", "Raglan", "Mt Maunganui"),
+  country = c("Australia", "Australia", "Australia", "New Zealand", "New Zealand", "New Zealand"),
+  lat = c(-27.4698, -28.642, -33.8688, -36.8485, -37.8003, -37.6386),
+  lon = c(153.0251, 153.602, 151.2093, 174.7633, 174.8700, 176.1843)
+)
+
+```
+
+```{r}
+library(leaflet)
+library(leaflet.extras)
+
+site_map <- leaflet(data = travel_spots) |> 
+  addProviderTiles(providers$Esri.WorldImagery, group = "ESRI World Imagery") |>  
+  addProviderTiles(providers$Stamen.TonerLite, group = "Toner Lite") |> 
+  
+  addMiniMap(toggleDisplay = TRUE, minimized = TRUE) |> 
+  
+  # Centered roughly between Australia and New Zealand
+  setView(lng = 160, lat = -30, zoom = 4) |> 
+  
+  # Add your travel markers
+  addMarkers(
+    ~lon, ~lat,
+    popup = ~paste("<strong>", place, "</strong><br>Country: ", country)
+  ) |> 
+  
+  addLayersControl(
+    baseGroups = c("ESRI World Imagery", "Toner Lite"),
+    overlayGroups = NULL
+  ) |> 
+  
+  addResetMapButton()
+
 ```
