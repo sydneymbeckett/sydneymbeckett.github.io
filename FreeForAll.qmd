@@ -11,4 +11,4 @@ Ever since I could stand my dad has been pushing me into waves. Throughout my ch
 
 I’ve been fortunate to spend much of my childhood—and continue to do so—traveling with family and friends. I love traveling because it allows me to explore new places, experience different cultures, and see the world from fresh perspectives. On my most recent adventure, I studied abroad in Australia. After school, seven friends and I traveled down the East Coast of Australia in a motorhome, from Brisbane to Sydney. We then flew to New Zealand, where we explored the North Island in another motorhome, chasing waves and embracing the spirit of adventure. Below is a little collage of some of the adventures during my time away!
 
-![](image/collage.png){width="400px"}
+![Travel collage](images/collage.png){alt="Travel collage"}
