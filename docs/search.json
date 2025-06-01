@@ -1,5 +1,26 @@
 [
   {
+    "objectID": "ProjectPage.html",
+    "href": "ProjectPage.html",
+    "title": "Project Page",
+    "section": "",
+    "text": "Below is a research paper for a project that I conducted that looked to identify the concentration of micro plastics in Soldier crabs to understand how micro plastics were impacting the local food web."
+  },
+  {
+    "objectID": "ProjectPage.html#research-paper",
+    "href": "ProjectPage.html#research-paper",
+    "title": "Project Page",
+    "section": "",
+    "text": "Below is a research paper for a project that I conducted that looked to identify the concentration of micro plastics in Soldier crabs to understand how micro plastics were impacting the local food web."
+  },
+  {
+    "objectID": "ProjectPage.html#code",
+    "href": "ProjectPage.html#code",
+    "title": "Project Page",
+    "section": "Code",
+    "text": "Code\nThe code below created a boxplot to compare the median particulate matter(PM 2.5) between Goleta and Santa Barbara with the interquartile range. The jittered points prevent overlapping so you can see the distribution clearly."
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -56,27 +77,6 @@
     "text": "Hey there, my name is Sydney! I am currently a 3rd year Environmental Studies student at University of California Santa Barbara. I am passionate about climate change and creating a sustainable future. Outside of school, I love to be outside, I am an avid surfer and I compete for my university."
   },
   {
-    "objectID": "ProjectPage.html",
-    "href": "ProjectPage.html",
-    "title": "Project Page",
-    "section": "",
-    "text": "Below is a research paper for a project that I conducted that looked to identify the concentration of micro plastics in Soldier crabs to understand how micro plastics were impacting the local food web."
-  },
-  {
-    "objectID": "ProjectPage.html#research-paper",
-    "href": "ProjectPage.html#research-paper",
-    "title": "Project Page",
-    "section": "",
-    "text": "Below is a research paper for a project that I conducted that looked to identify the concentration of micro plastics in Soldier crabs to understand how micro plastics were impacting the local food web."
-  },
-  {
-    "objectID": "ProjectPage.html#code-output",
-    "href": "ProjectPage.html#code-output",
-    "title": "Project Page",
-    "section": "Code Output",
-    "text": "Code Output"
-  },
-  {
     "objectID": "FreeForAll.html",
     "href": "FreeForAll.html",
     "title": "Passions",
@@ -95,13 +95,6 @@
     "href": "FreeForAll.html#traveling",
     "title": "Passions",
     "section": "Traveling",
-    "text": "Traveling"
-  },
-  {
-    "objectID": "ProjectPage.html#code",
-    "href": "ProjectPage.html#code",
-    "title": "Project Page",
-    "section": "Code",
-    "text": "Code\nThe code below created a boxplot to compare the median particulate matter(PM 2.5) between Goleta and Santa Barbara with the interquartile range. The jittered points prevent overlapping so you can see the distribution clearly."
+    "text": "Traveling\nI’ve been fortunate to spend much of my childhood—and continue to do so—traveling with family and friends. I love traveling because it allows me to explore new places, experience different cultures, and see the world from fresh perspectives. On my most recent adventure, I studied abroad in Australia. After school, seven friends and I traveled down the East Coast of Australia in a motorhome, from Brisbane to Sydney. We then flew to New Zealand, where we explored the North Island in another motorhome, chasing waves and embracing the spirit of adventure."
   }
 ]
