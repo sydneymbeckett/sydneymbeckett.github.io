@@ -1,6 +1,7 @@
 ---
 title: "Sydney Beckett"
-image: image/headshot.jpg
+image: images/headshot.jpg
+
 toc: false
 about: 
   template: solana
