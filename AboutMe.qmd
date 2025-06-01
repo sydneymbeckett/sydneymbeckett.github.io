@@ -13,7 +13,7 @@ Welcome! I'm excited to share a little bit more about myself.
 
 I grew up in **Morro Bay**, where surfing, swimming, and spending time in the ocean shaped my deep connection to the natural world. That early love for the coast and marine life inspired my passion for sustainability.
 
-<img src="images/surfing.JPG" width="400"/>
+<img src="images/surfing.JPG" width="359"/>
 
 ------------------------------------------------------------------------
 
@@ -21,7 +21,7 @@ I grew up in **Morro Bay**, where surfing, swimming, and spending time in the oc
 
 I'm currently a **third-year Environmental Studies major at UC Santa Barbara**. My academic path reflects my deep interest in environmental protection, coastal ecosystems, and sustainable solutions for the future.
 
-<img src="images/ucsb.jpeg" width="400"/>
+<img src="images/ucsb.jpeg" width="323"/>
 
 ------------------------------------------------------------------------
 
