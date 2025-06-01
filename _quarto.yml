@@ -5,7 +5,7 @@ project:
 website:
   title: "Sydney Beckett"
   navbar:
-   left:
+   right:
      - href: index.qmd
        text: Home
      - href: AboutMe.qmd
