@@ -16,12 +16,15 @@ website:
        text: Passions
      - href: Resume.qmd
        text: Resume
-     
+  page-footer:
+     background: light
+    
 
 format:
   html:
     theme: journal
-    css: styles.css
+    mainfont: Noto Serif
+    css: styles.scss
     toc: true
     page-layout: full
 
