@@ -15,7 +15,7 @@ I’ve been fortunate to spend much of my childhood—and continue to do so—tr
 
 ![Travel collage](images/collage.png)
 
-Below I created a map of all of the places that I traveled after my study abroad! I used leaflet
+Below I created a map of all of the places that I traveled after my study abroad! I used the leaflet package to create an interactive portion so you can click on each point to show what town/country it is in.
 
 ```{r}
 library(tidyverse) # data wrangling & viz (with {ggplot2})
