@@ -1,0 +1,33 @@
+/*-- scss:defaults --*/
+
+// Import Fonts
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+
+// Colors
+$cream:       #FFF8F0; // background or base color
+$butter:      #FDE6A8; // soft yellow, nice for highlights
+$peach:       #F7C8A2; // warm, soft accent
+$terracotta:  #D28F6A; // muted clay-orange, great for buttons or headers
+$warm-gray:   #908E8C; // neutral text or dividers
+$rosewood:    #884C4A; // deeper accent, for emphasis
+$soft-sage:   #D6D9B9; // calming greenish accent
+
+// Base document colors
+$navbar-bg: $cream; // navbar
+$navbar-fg: $butter; // navbar foreground elements
+$navbar-hl: $peach; // highlight color when hovering over navbar links
+$body-bg: $cream; // page background 
+$body-color: $warm-graygray; // page text 
+$footer-bg: $soft-sage; // footer 
+$link-color: $terracotta; // hyperlinks 
+
+// Inline code
+$code-bg: $cream; // inline code background color
+$code-color: $terracotta; // inline code text color
+
