@@ -56,8 +56,3 @@ travel_map <- leaflet(data = travel) |> #initialize map using my travel data
 travel_map
 
 ```
-
-```{r}
-leaflet(data = travel) |> addTiles()
-
-```
