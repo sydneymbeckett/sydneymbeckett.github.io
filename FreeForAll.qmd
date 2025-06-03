@@ -30,6 +30,8 @@ travel <- read_csv("Travel.csv")
 ```
 
 ```{r}
+#| echo: false
+#| eval: true
 library(leaflet) 
 library(leaflet.extras)
 
