@@ -1,0 +1,10 @@
+---
+title: "Research Paper"
+description: "This is a research paper for a project that I conducted that looked to identify the concentration of micro plastics that Soldier crabs had digested to understand how micro plastics were impacting the local food web."
+author:
+  - name: Sydney Beckett
+    url: 
+date: 06-04-2025
+image: soldiercrab
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---
