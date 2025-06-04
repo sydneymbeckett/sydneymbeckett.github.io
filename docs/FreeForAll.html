@@ -20,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -227,59 +192,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Below I created a map of all of the places that I traveled after my study abroad! I used the leaflet package to create an interactive portion so you can click on each point to show what town/country it is in.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#| message: false</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse) <span class="co"># data wrangling &amp; viz (with {ggplot2})</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.1.4     ✔ readr     2.1.5
-✔ forcats   1.0.0     ✔ stringr   1.5.1
-✔ ggplot2   3.5.2     ✔ tibble    3.2.1
-✔ lubridate 1.9.4     ✔ tidyr     1.3.1
-✔ purrr     1.0.4     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly) <span class="co"># JS plots!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'plotly'
-
-The following object is masked from 'package:ggplot2':
-
-    last_plot
-
-The following object is masked from 'package:stats':
-
-    filter
-
-The following object is masked from 'package:graphics':
-
-    layout</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(DT) <span class="co"># JS tables!</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet) <span class="co"># JS maps!</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet.extras) <span class="co"># leaflet add-ons!</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>travel <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"Travel.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Rows: 11 Columns: 4
-── Column specification ────────────────────────────────────────────────────────
-Delimiter: ","
-chr (2): Location, Country
-dbl (2): Latitude, Longitude
-
-ℹ Use `spec()` to retrieve the full column specification for this data.
-ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-</div>
-</div>
-<div class="cell">
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-3d40d0f1681c60d97fe5" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-3d40d0f1681c60d97fe5">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["OpenStreetMap.Mapnik",null,"OSM Classic",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"ESRI Satellite",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMiniMap","args":[null,null,"bottomright",150,150,19,19,-5,false,false,false,true,false,true,{"color":"#ff7800","weight":1,"clickable":false},{"color":"#000000","weight":1,"clickable":false,"opacity":0,"fillOpacity":0},{"hideText":"Hide MiniMap","showText":"Show MiniMap"},[]]},{"method":"addCircleMarkers","args":[[-27.4698,-28.1652,-28.6474,-31.1833,-33.8688,-36.8485,-36.8022,-36.9516,-35.9667,-37.8,-36.7667],[153.0251,153.5333,153.602,152.9833,151.2093,174.7633,175.1047,174.4696,174.45,174.8833,175.5],6,null,null,{"interactive":true,"className":"","stroke":true,"color":"navy","weight":5,"opacity":0.5,"fill":true,"fillColor":"navy","fillOpacity":0.8},null,null,["<strong>Brisbane<\/strong><br>Australia","<strong>Kirra Beach<\/strong><br>Australia","<strong>Byron Bay<\/strong><br>Australia","<strong>Crescent Head<\/strong><br>Australia","<strong>Sydney<\/strong><br>Australia","<strong>Auckland<\/strong><br>New Zealand","<strong>Waiheke Island<\/strong><br>New Zealand","<strong>Piha<\/strong><br>New Zealand","<strong>Waipu<\/strong><br>New Zealand","<strong>Raglan<\/strong><br>New Zealand","<strong>Coromandel<\/strong><br>New Zealand"],null,["Brisbane","Kirra Beach","Byron Bay","Crescent Head","Sydney","Auckland","Waiheke Island","Piha","Waipu","Raglan","Coromandel"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addPolylines","args":[[[[{"lng":[153.0251,153.5333,153.602,152.9833,151.2093,174.7633,175.1047,174.4696,174.45,174.8833,175.5],"lat":[-27.4698,-28.1652,-28.6474,-31.1833,-33.8688,-36.8485,-36.8022,-36.9516,-35.9667,-37.8,-36.7667]}]]],null,null,{"interactive":true,"className":"","stroke":true,"color":"darkred","weight":2,"opacity":0.5,"fill":false,"fillColor":"darkred","fillOpacity":0.2,"smoothFactor":1,"noClip":false},null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["Carto Light","ESRI Satellite"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]},{"method":"addEasyButton","args":[{"icon":"ion-arrow-shrink","title":"Reset View","onClick":"function(btn, map){ map.setView(map._initialCenter, map._initialZoom); }","position":"topleft"}]}],"limits":{"lat":[-37.8,-27.4698],"lng":[151.2093,175.5]}},"evals":["calls.6.args.0.onClick"],"jsHooks":{"render":[{"code":"function(el, x, data) {\n  return (\nfunction(el, x){\n  var map = this;\n  map.whenReady(function(){\n    map._initialCenter = map.getCenter();\n    map._initialZoom = map.getZoom();\n  });\n}).call(this.getMap(), el, x, data);\n}","data":null}]}}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-f96e82505a1f4161503f" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-f96e82505a1f4161503f">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["OpenStreetMap.Mapnik",null,"OSM Classic",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"ESRI Satellite",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMiniMap","args":[null,null,"bottomright",150,150,19,19,-5,false,false,false,true,false,true,{"color":"#ff7800","weight":1,"clickable":false},{"color":"#000000","weight":1,"clickable":false,"opacity":0,"fillOpacity":0},{"hideText":"Hide MiniMap","showText":"Show MiniMap"},[]]},{"method":"addCircleMarkers","args":[[-27.4698,-28.1652,-28.6474,-31.1833,-33.8688,-36.8485,-36.8022,-36.9516,-35.9667,-37.8,-36.7667],[153.0251,153.5333,153.602,152.9833,151.2093,174.7633,175.1047,174.4696,174.45,174.8833,175.5],6,null,null,{"interactive":true,"className":"","stroke":true,"color":"navy","weight":5,"opacity":0.5,"fill":true,"fillColor":"navy","fillOpacity":0.8},null,null,["<strong>Brisbane<\/strong><br>Australia","<strong>Kirra Beach<\/strong><br>Australia","<strong>Byron Bay<\/strong><br>Australia","<strong>Crescent Head<\/strong><br>Australia","<strong>Sydney<\/strong><br>Australia","<strong>Auckland<\/strong><br>New Zealand","<strong>Waiheke Island<\/strong><br>New Zealand","<strong>Piha<\/strong><br>New Zealand","<strong>Waipu<\/strong><br>New Zealand","<strong>Raglan<\/strong><br>New Zealand","<strong>Coromandel<\/strong><br>New Zealand"],null,["Brisbane","Kirra Beach","Byron Bay","Crescent Head","Sydney","Auckland","Waiheke Island","Piha","Waipu","Raglan","Coromandel"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addPolylines","args":[[[[{"lng":[153.0251,153.5333,153.602,152.9833,151.2093,174.7633,175.1047,174.4696,174.45,174.8833,175.5],"lat":[-27.4698,-28.1652,-28.6474,-31.1833,-33.8688,-36.8485,-36.8022,-36.9516,-35.9667,-37.8,-36.7667]}]]],null,null,{"interactive":true,"className":"","stroke":true,"color":"darkred","weight":2,"opacity":0.5,"fill":false,"fillColor":"darkred","fillOpacity":0.2,"smoothFactor":1,"noClip":false},null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["Carto Light","ESRI Satellite"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]},{"method":"addEasyButton","args":[{"icon":"ion-arrow-shrink","title":"Reset View","onClick":"function(btn, map){ map.setView(map._initialCenter, map._initialZoom); }","position":"topleft"}]}],"limits":{"lat":[-37.8,-27.4698],"lng":[151.2093,175.5]}},"evals":["calls.6.args.0.onClick"],"jsHooks":{"render":[{"code":"function(el, x, data) {\n  return (\nfunction(el, x){\n  var map = this;\n  map.whenReady(function(){\n    map._initialCenter = map.getCenter();\n    map._initialZoom = map.getZoom();\n  });\n}).call(this.getMap(), el, x, data);\n}","data":null}]}}</script>
 </div>
 </div>
 
