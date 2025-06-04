@@ -1,24 +1,10 @@
 [
   {
-    "objectID": "ProjectPage.html",
-    "href": "ProjectPage.html",
-    "title": "Project Page",
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "My Blog",
     "section": "",
-    "text": "Below is a research paper for a project that I conducted that looked to identify the concentration of micro plastics in Soldier crabs to understand how micro plastics were impacting the local food web."
-  },
-  {
-    "objectID": "ProjectPage.html#research-paper",
-    "href": "ProjectPage.html#research-paper",
-    "title": "Project Page",
-    "section": "",
-    "text": "Below is a research paper for a project that I conducted that looked to identify the concentration of micro plastics in Soldier crabs to understand how micro plastics were impacting the local food web."
-  },
-  {
-    "objectID": "ProjectPage.html#code",
-    "href": "ProjectPage.html#code",
-    "title": "Project Page",
-    "section": "Code",
-    "text": "Code\nThe code below created a boxplot to compare the median particulate matter(PM 2.5) between Goleta and Santa Barbara with the interquartile range. This was done in order to better understand the impact of the Thomas Fire that occured in 2017-2018. Because the Thomas Fire burned from Ventura north, we wanted to further understand how it impacted Santa Barbara and Goleta which is slightly further north, but could have had differing impacts due to wind. The jittered points prevent overlapping so you can see the distribution clearly."
+    "text": "Research Paper\n\n\nThis is a research paper for a project that I conducted that looked to identify the concentration of micro plastics that Soldier crabs had digested to understand how micro…\n\n\n\nSydney Beckett\n\n\nJun 4, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nRStudio Code For ENVS193\n\n\nThis is code for my ENVS193 class which looks at the the median particulate matter(PM 2.5) between Goleta and Santa Barbara during the Thomas Fires that occured in 2017-2018.\n\n\n\nSydney Beckett\n\n\nJun 4, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -70,6 +56,13 @@
     "text": "What I Do\nI work as a lead coach for The Sea League (TSL) in Santa Barbara. TSL is an after-school program serving low-income youth, helping them build a relationship with the ocean through hands-on education. We explore the intertidal zone, teach about marine ecology, and encourage environmental stewardship."
   },
   {
+    "objectID": "posts/2025-06-04-CodePage/index.html",
+    "href": "posts/2025-06-04-CodePage/index.html",
+    "title": "RStudio Code For ENVS193",
+    "section": "",
+    "text": "The code below created a boxplot to compare the median particulate matter(PM 2.5) between Goleta and Santa Barbara with the interquartile range. This was done in order to better understand the impact of the Thomas Fire that occured in 2017-2018. Because the Thomas Fire burned from Ventura north, we wanted to further understand how it impacted Santa Barbara and Goleta which is slightly further north, but could have had differing impacts due to wind. The jittered points prevent overlapping so you can see the distribution clearly. \n\n\n\nOutput"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Sydney Beckett",
@@ -96,26 +89,5 @@
     "title": "Passions",
     "section": "Traveling",
     "text": "Traveling\nI’ve been fortunate to spend much of my childhood—and continue to do so—traveling with family and friends. I love traveling because it allows me to explore new places, experience different cultures, and see the world from fresh perspectives. On my most recent adventure, I studied abroad in Australia. After school, seven friends and I traveled down the East Coast of Australia in a motorhome, from Brisbane to Sydney. We then flew to New Zealand, where we explored the North Island in another motorhome, chasing waves and embracing the spirit of adventure. Below is a little collage of some of the adventures during my time away!\n\n\n\nTravel collage\n\n\nBelow I created a map of all of the places that I traveled after my study abroad! I used the leaflet package to create an interactive portion so you can click on each point to show what town/country it is in."
-  },
-  {
-    "objectID": "posts/posts.html",
-    "href": "posts/posts.html",
-    "title": "My Blog",
-    "section": "",
-    "text": "No matching items"
-  },
-  {
-    "objectID": "posts.html",
-    "href": "posts.html",
-    "title": "My Blog",
-    "section": "",
-    "text": "Research Paper\n\n\nThis is a research paper for a project that I conducted that looked to identify the concentration of micro plastics that Soldier crabs had digested to understand how micro…\n\n\n\nSydney Beckett\n\n\nJun 4, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nRStudio Code For ENVS193\n\n\nThis is code for my ENVS193 class which looks at the the median particulate matter(PM 2.5) between Goleta and Santa Barbara during the Thomas Fires that occured in 2017-2018.\n\n\n\nSydney Beckett\n\n\nJun 4, 2025\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/2025-06-04-CodePage/index.html",
-    "href": "posts/2025-06-04-CodePage/index.html",
-    "title": "RStudio Code For ENVS193",
-    "section": "",
-    "text": "The code below created a boxplot to compare the median particulate matter(PM 2.5) between Goleta and Santa Barbara with the interquartile range. This was done in order to better understand the impact of the Thomas Fire that occured in 2017-2018. Because the Thomas Fire burned from Ventura north, we wanted to further understand how it impacted Santa Barbara and Goleta which is slightly further north, but could have had differing impacts due to wind. The jittered points prevent overlapping so you can see the distribution clearly. \n\n\n\nOutput"
   }
 ]
