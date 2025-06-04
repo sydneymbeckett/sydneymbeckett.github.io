@@ -5,7 +5,7 @@ author:
   - name: Sydney Beckett
     url: https://sydneymbeckett.github.io/
 date: 06-04-2025
-image: soldiercrab
+image: soldiercrab.png
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
 

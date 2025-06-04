@@ -1,0 +1,16 @@
+---
+title: "RStudio Code For ENVS193"
+description: "This is code for my ENVS193 class which looks at the the median particulate matter(PM 2.5) between Goleta and Santa Barbara during the Thomas Fires that occured in 2017-2018."
+author:
+  - name: Sydney Beckett
+    url: https://sydneymbeckett.github.io/
+date: 06-04-2025
+image: Fire.png
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+
+---
+
+The code below created a boxplot to compare the median particulate matter(PM 2.5) between Goleta and Santa Barbara with the interquartile range. This was done in order to better understand the impact of the Thomas Fire that occured in 2017-2018. Because the Thomas Fire burned from Ventura north, we wanted to further understand how it impacted Santa Barbara and Goleta which is slightly further north, but could have had differing impacts due to wind. The jittered points prevent overlapping so you can see the distribution clearly.
+![Code](code.png)
+
+![Output](output.png)
