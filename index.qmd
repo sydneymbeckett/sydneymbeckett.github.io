@@ -9,7 +9,7 @@ about:
   image-width: 17em
   links:
     - text: LinkedIn
-      href: www.linkedin.com/in/sydney-beckett-42431b257
+      href: https://www.linkedin.com/in/sydney-beckett-42431b257/
     - text: GitHub
       href: https://github.com/sydneymbeckett
     - text: Email
