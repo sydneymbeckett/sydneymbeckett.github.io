@@ -9,6 +9,4 @@ image: soldiercrab
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
 
-<iframe src="MBRSReport.pdf" width="100%" height="700px">
-
-</iframe>
+<iframe src="MBRSReport.pdf" width="100%" height="700px"></iframe>
