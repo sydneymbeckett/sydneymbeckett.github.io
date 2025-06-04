@@ -16,6 +16,8 @@ website:
        text: Passions
      - href: Resume.qmd
        text: Resume
+     - href: posts.qmd
+       text: Project Page
   page-footer:
      background: light
     
