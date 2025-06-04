@@ -109,6 +109,13 @@
     "href": "posts.html",
     "title": "My Blog",
     "section": "",
-    "text": "Research Paper\n\n\nThis is a research paper for a project that I conducted that looked to identify the concentration of micro plastics that Soldier crabs had digested to understand how micro…\n\n\n\nSydney Beckett\n\n\nJun 4, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "Research Paper\n\n\nThis is a research paper for a project that I conducted that looked to identify the concentration of micro plastics that Soldier crabs had digested to understand how micro…\n\n\n\nSydney Beckett\n\n\nJun 4, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nRStudio Code For ENVS193\n\n\nThis is code for my ENVS193 class which looks at the the median particulate matter(PM 2.5) between Goleta and Santa Barbara during the Thomas Fires that occured in 2017-2018.\n\n\n\nSydney Beckett\n\n\nJun 4, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/2025-06-04-CodePage/index.html",
+    "href": "posts/2025-06-04-CodePage/index.html",
+    "title": "RStudio Code For ENVS193",
+    "section": "",
+    "text": "The code below created a boxplot to compare the median particulate matter(PM 2.5) between Goleta and Santa Barbara with the interquartile range. This was done in order to better understand the impact of the Thomas Fire that occured in 2017-2018. Because the Thomas Fire burned from Ventura north, we wanted to further understand how it impacted Santa Barbara and Goleta which is slightly further north, but could have had differing impacts due to wind. The jittered points prevent overlapping so you can see the distribution clearly. \n\n\n\nOutput"
   }
 ]
