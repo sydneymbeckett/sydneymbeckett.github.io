@@ -10,8 +10,6 @@ website:
        text: Home
      - href: AboutMe.qmd
        text: About Me
-     - href: ProjectPage.qmd
-       text: Project Page
      - href: FreeForAll.qmd
        text: Passions
      - href: Resume.qmd
